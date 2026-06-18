@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Users, GraduationCap, Building2, TrendingUp, ArrowUpRight } from "lucide-react";
 
 export default function DashboardOverview() {
@@ -72,18 +73,18 @@ export default function DashboardOverview() {
         <div className="bg-white rounded-3xl border border-border shadow-sm p-6">
           <h3 className="text-lg font-heading font-semibold mb-6">Quick Actions</h3>
           <div className="space-y-3">
-            <button className="w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
+            <Link href="/dashboard/students" className="block w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
               <h4 className="font-medium mb-1 group-hover:text-primary">Add New Student</h4>
               <p className="text-xs text-muted-foreground">Import via CSV or manually.</p>
-            </button>
-            <button className="w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
+            </Link>
+            <Link href="/dashboard/placements" className="block w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
               <h4 className="font-medium mb-1 group-hover:text-primary">Log Placement</h4>
               <p className="text-xs text-muted-foreground">Record a new job offer.</p>
-            </button>
-            <button className="w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
+            </Link>
+            <Link href="/dashboard/documents" className="block w-full text-left p-4 rounded-2xl border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all group">
               <h4 className="font-medium mb-1 group-hover:text-primary">Upload MOU</h4>
               <p className="text-xs text-muted-foreground">Update partnership documents.</p>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
